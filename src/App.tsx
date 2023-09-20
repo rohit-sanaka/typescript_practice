@@ -8,6 +8,7 @@ import Greet from './components/props/Greet';
 import Heading from './components/props/Heading';
 import Person from './components/props/Person';
 import PersonList from './components/props/PersonList';
+import CursorLocation from './components/renderProps/CursorLocation';
 
 function App() {
   const personName = {
@@ -50,6 +51,7 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <CursorLocation />
     </>
   );
 }
