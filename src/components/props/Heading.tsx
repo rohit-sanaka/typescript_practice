@@ -1,15 +1,15 @@
 type PropsReactNode = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 type PropsString = {
-  children: string;
-};
+  children: string
+}
 
-type HeadingProps = PropsReactNode | PropsString;
+type HeadingProps = PropsReactNode | PropsString
 
 const Heading = ({ children }: HeadingProps) => {
-  return <div>{children}</div>;
-};
+  return <div>{children}</div>
+}
 
-export default Heading;
+export default Heading

@@ -1,19 +1,19 @@
-import { UserContext } from './UserContext';
-import { useContext } from 'react';
+import { UserContext } from './UserContext'
+import { useContext } from 'react'
 
 const User = () => {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext)
 
   const handleLogin = () => {
     setUser({
       name: 'Rohit',
       email: 'Rohit@example.com',
-    });
-  };
+    })
+  }
 
   const handleLogOut = () => {
-    setUser(null);
-  };
+    setUser(null)
+  }
 
   return (
     <div>
@@ -22,6 +22,6 @@ const User = () => {
       <div>{user?.name ? `UserName : ${user.name}` : 'Guest'}</div>
       <div>{user?.email ? `Email : ${user.email}` : 'NoEmail'}</div>
     </div>
-  );
-};
-export default User;
+  )
+}
+export default User

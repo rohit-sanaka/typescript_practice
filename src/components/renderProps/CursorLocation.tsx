@@ -1,4 +1,4 @@
-import MouseTracker from './MouseTracker';
+import MouseTracker from './MouseTracker'
 
 const CursorLocation = () => {
   return (
@@ -6,12 +6,10 @@ const CursorLocation = () => {
       // Here we are passing a function which returns some jsx as a prop to MouseTracker Component.
       renderProp={(mousePosition) => {
         return (
-          <div>
-            {`Mouse Position : x: ${mousePosition.x}, y: ${mousePosition.y}`}
-          </div>
-        );
+          <div>{`Mouse Position : x: ${mousePosition.x}, y: ${mousePosition.y}`}</div>
+        )
       }}
     />
-  );
-};
-export default CursorLocation;
+  )
+}
+export default CursorLocation

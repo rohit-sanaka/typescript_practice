@@ -1,20 +1,20 @@
-import './App.css';
-import Box from './components/context/Box';
-import { ThemeContextProvider } from './components/context/ThemeContext';
-import User from './components/context/User';
-import { UserContextProvider } from './components/context/UserContext';
-import Button from './components/props/Button';
-import Greet from './components/props/Greet';
-import Heading from './components/props/Heading';
-import Person from './components/props/Person';
-import PersonList from './components/props/PersonList';
-import CursorLocation from './components/renderProps/CursorLocation';
+import './App.css'
+import Box from './components/context/Box'
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import User from './components/context/User'
+import { UserContextProvider } from './components/context/UserContext'
+import Button from './components/props/Button'
+import Greet from './components/props/Greet'
+import Heading from './components/props/Heading'
+import Person from './components/props/Person'
+import PersonList from './components/props/PersonList'
+import CursorLocation from './components/renderProps/CursorLocation'
 
 function App() {
   const personName = {
     first: 'Rohit',
     last: 'Kumar',
-  };
+  }
 
   const nameList = [
     {
@@ -29,7 +29,7 @@ function App() {
       first: 'Dileep',
       last: 'Sharma',
     },
-  ];
+  ]
 
   return (
     <>
@@ -42,7 +42,7 @@ function App() {
       </Heading>
       <Button
         handleClick={(event, id) => {
-          console.log('Button clicked', event, id);
+          console.log('Button clicked', event, id)
         }}
       />
       <ThemeContextProvider>
@@ -53,7 +53,7 @@ function App() {
       </UserContextProvider>
       <CursorLocation />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

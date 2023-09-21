@@ -1,7 +1,7 @@
-import { PersonProps } from './Person.types';
+import { PersonProps } from './Person.types'
 
 const Person = ({ name }: PersonProps) => {
-  return <h1>{`Hi ${name.first} ${name.last}`}</h1>;
-};
+  return <h1>{`Hi ${name.first} ${name.last}`}</h1>
+}
 
-export default Person;
+export default Person
